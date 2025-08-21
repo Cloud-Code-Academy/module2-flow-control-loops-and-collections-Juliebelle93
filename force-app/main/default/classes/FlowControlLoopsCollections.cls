@@ -28,9 +28,19 @@ public with sharing class FlowControlLoopsCollections {
      * @param y The second number.
      * @return "Hello World!" if x greater than y, otherwise return null.
      */
-    public static String helloWorld(Integer x, Integer y) {
-        return null; // Replace null with the variable you used to store the result
+public static String helloWorld(Integer x, Integer y) {
+    if(x == null || y == null) {
+        return null;
     }
+
+    // Comparing x and y
+    if (x > y) {
+        return 'Hello World!';
+    }
+
+    // The default return
+    return null;
+}
 
     /**
      * Question 2
