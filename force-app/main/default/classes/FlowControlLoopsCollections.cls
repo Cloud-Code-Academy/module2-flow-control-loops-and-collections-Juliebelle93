@@ -52,8 +52,23 @@ public static String helloWorld(Integer x, Integer y) {
      * @return true if the person is eligible to vote, false otherwise.
      */
     public static Boolean votingEligibility(Integer age) {
+        if(age==null) {
+            return null;
+        }
+        //Check if the person is less than 18 years old
+        if (age < 18) {
+            return false;
+        }
+        //Check if person is 18 or older
+        if (age >= 18) {
+            return true;
+        }   else {   
+            return null;
+        }
+
         return null; // Replace null with the variable you used to store the result
     }
+
 
     /**
      * Question 3
